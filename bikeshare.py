@@ -205,11 +205,12 @@ def raw_data(df):
     print()
     ini = 0
     while True:
-        user_prompt = input('Do you want to see 5 lines of raw data? Enter yes or no.\n').lower()
-        if user_prompt == 'yes':
+        prompt_user = input('Do you want to see 5 lines of raw data? Enter yes or no.\n').lower()
+        if prompt_user == 'yes':
             ini += 1
             print(df.iloc[0:5])
-        elif user_prompt.lower() == 'no':
+        elif prompt_user.lower() == 'no':
+            print('Quitting')
             break     
     
     
