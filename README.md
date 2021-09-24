@@ -13,7 +13,7 @@ This is an interactive project that provides a user with some interesting data r
 bikeshare.py
 
 ### Credits
-https://git-scm.com/
-https://wordpress.com/support/markdown-quick-reference/
-https://sites.google.com/udacity.com/programdatascipython-project3/home
-https://stackoverflow.com/questions/16951207/git-commit-error-pathspec-commit-did-not-match-any-files-known-to-git
+* https://git-scm.com/
+* https://wordpress.com/support/markdown-quick-reference/
+* https://sites.google.com/udacity.com/programdatascipython-project3/home
+* https://stackoverflow.com/questions/16951207/git-commit-error-pathspec-commit-did-not-match-any-files-known-to-git
