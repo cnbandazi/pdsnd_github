@@ -1,7 +1,7 @@
 >**Note**: In this project the Udacity repository https://github.com/pdsnd_github.git has been **forked** to my **remote** repository, https://github.com/cnbandazi/pdsnd_github.gitrepository in **my** Github account. The remote repository has been cloned to my local machine. The final aim is to push all the changes made in my local repository to Github repository.
 
 ### Date created
-13 September 2021
+*13 September 2021*
 
 ### Project Title
 **Explore US Bikeshare data**
