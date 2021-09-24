@@ -210,6 +210,7 @@ def raw_data(df):
             ini += 1
             print(df.iloc[0:5])
         elif user_prompt.lower() == 'no':
+            print('Quitting')
             break     
     
     
