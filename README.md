@@ -4,7 +4,7 @@
 13 September 2021
 
 ### Project Title
-Explore US Bikeshare data
+**Explore US Bikeshare data**
 
 ### Description
 This is an interactive project that provides a user with some interesting data regarding bikesharing in three major US cities of New York, Chicago and Washington. The data was downloaded from publically available databases and manipulated for use in this project.
