@@ -19,7 +19,7 @@ def get_filters():
     """
     print('Hello! Let\'s explore some US bikeshare data!')
     print()
-    # TO DO: get user input for city (chicago, new york city, washington). HINT: Use a while loop to handle invalid inputs
+    # Get user input for city (chicago, new york city, washington). HINT: Use a while loop to handle invalid inputs
     
     while True:
         city = ''
@@ -32,7 +32,7 @@ def get_filters():
             print('Wrong input; select city among chicago, new york city and washington')
 
     print()
-    # TO DO: get user input for month (all, january, february, ... , june)
+    # Get user input for month (all, january, february, ... , june)
     while True:
         month = ''
         month = input('Now enter month you want to explore\n').lower()
@@ -42,7 +42,7 @@ def get_filters():
             print('wrong input; please try to enter month again')
 
     print()
-    # TO DO: get user input for day of week (all, monday, tuesday, ... sunday)
+    # Get user input for day of week (all, monday, tuesday, ... sunday)
     while True:
         day = ''
         day = input('Now it is time to enter the day of week to explore\n').lower()
@@ -106,17 +106,17 @@ def time_stats(df):
     # convert the Start Time column to datetime
     df['Start Time'] = pd.to_datetime(df['Start Time'])
     
-    # TO DO: display the most common month
+    # Display the most common month
     df['month'] = df['Start Time'].dt.month
     print('The most common month is:', statistics.mode(df['month']))   
     
     print()
-    # TO DO: display the most common day of week
+    # Display the most common day of week
     df['day_of_week'] = df['Start Time'].dt.weekday_name
     print('The most common day of week is:', statistics.mode( df['day_of_week']))     
 
     print()
-    # TO DO: display the most common start hour
+    # Display the most common start hour
     df['Start_Hour'] = df['Start Time'].dt.hour
     print('The most common start hour is:', statistics.mode(df['Start_Hour']))
 
@@ -133,15 +133,15 @@ def station_stats(df):
     start_time = time.time()
 
     print()
-    # TO DO: display most commonly used start station
+    # Display most commonly used start station
     print('Most commonly used start station is:', statistics.mode(df['Start Station']))
 
     print()
-    # TO DO: display most commonly used end station
+    # Display most commonly used end station
     print('Most commonly used end station is:', statistics.mode(df['End Station']))
 
     print()
-    # TO DO: display most frequent combination of start station and end station trip
+    # Display most frequent combination of start station and end station trip
     print('The most frequent combination of start and end staton is:', statistics.mode(df['Start Station'] + 'and' + df['End Station'])) 
 
     print()
@@ -156,11 +156,11 @@ def trip_duration_stats(df):
     start_time = time.time()
 
     print()
-    # TO DO: display total travel time
+    # Display total travel time
     print('Total travel time is:', df['Trip Duration'].sum())
 
     print()
-    # TO DO: display mean travel time
+    # Display mean travel time
     print('Mean travel time is:', df['Trip Duration'].mean())
 
     print("\nThis took %s seconds." % (time.time() - start_time))
@@ -174,18 +174,18 @@ def user_stats(df):
     start_time = time.time()
 
     print()
-    # TO DO: Display counts of user types
+    # Display counts of user types
     print('The counts of user types are as follows:', df['User Type'].value_counts(ascending=True))
     
     print()
-    # TO DO: Display counts of gender
+    # Display counts of gender
     if 'Gender' in df:
           print('The gender counts are as follows:', df['Gender'].value_counts())
     else:
           print('Sorry! there are no gender entries for this city')
     
     print()
-    # TO DO: Display earliest, most recent, and most common year of birth
+    # Display earliest, most recent, and most common year of birth
     if 'Birth Year' in df:
           print('The earliest birth year is:', min(df['Birth Year'])) 
           print()
